@@ -1,4 +1,4 @@
-EXTRACT pump1
+EXTRACT pump
 RMTHOST yaounde.host, MGRPORT 7809
 RMTTRAIL ./dirdat/ra
 TABLE schema_name.*;
