@@ -108,8 +108,7 @@ You can integrate with:
 
 ```text
 goldengate-replication-kribi/
-├── architecture/        # Diagrams and topology
 ├── config/              # GoldenGate parameter files
 ├── scripts/             # Setup SQL and automation scripts
-├── docs/                # Documentation and notes
-└── README.md
+├── README.md            
+└── architecture.png     # Diagrams and topology
