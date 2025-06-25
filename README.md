@@ -100,7 +100,7 @@ alter user ggadmin default tablespace ggadmin;
 ## Monitoring
 You can integrate with:
 - Oracle GoldenGate Monitor
-- Custom logs/alerts using shell scripts or Prometheus exporters
+- Custom logs/alerts using shell scripts or Zabbix.
 
 
 
