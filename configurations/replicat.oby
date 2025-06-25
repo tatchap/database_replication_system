@@ -1,3 +1,0 @@
-REPLICAT replicat
-USERID ggate, PASSWORD given_password
-MAP schema_name.*, TARGET schema_name.*;
