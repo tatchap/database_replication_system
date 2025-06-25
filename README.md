@@ -97,6 +97,16 @@ autoextend on;
 alter user ggadmin default tablespace ggadmin;
 ```
 
+
+Steps before using the script configure_ogg.sh found in the scripts directory, configure the Credential Store once:
+In GGSCI:
+```
+sql
+
+ADD CREDENTIALSTORE
+ALTER CREDENTIALSTORE ADD USER ggadmin, PASSWORD ggadmin, ALIAS ggadmin
+```
+
 ## Monitoring
 You can integrate with:
 - Oracle GoldenGate Monitor
