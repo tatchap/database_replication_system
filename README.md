@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/f0fdc589-626a-4a7b-9076-9c01644a1417)# Oracle GoldenGate Replication for Port Authority of Kribi
+# Oracle GoldenGate Replication for Port Authority of Kribi
 
 This project sets up real-time database replication using **Oracle GoldenGate** between two physical locations:
 - **Mboro**: Production database site (Kribi Port)
