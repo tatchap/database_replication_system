@@ -1,0 +1,29 @@
+These prepare your database for GoldenGate by creating the necessary user, tablespace, and grants.
+
+Example: Create User & Tablespace for GoldenGate (ggadmin)
+
+-- Create a tablespace for GoldenGate
+CREATE TABLESPACE ggadmin_tbs
+DATAFILE '/u01/app/oracle/oradata/ORCL/ggadmin_tbs01.dbf'
+SIZE 100M AUTOEXTEND ON NEXT 10M MAXSIZE UNLIMITED;
+
+-- Create GoldenGate user
+CREATE USER ggadmin IDENTIFIED BY YourStrongPassword
+DEFAULT TABLESPACE ggadmin_tbs
+TEMPORARY TABLESPACE temp
+QUOTA UNLIMITED ON ggadmin_tbs;
+
+-- Grant required privileges
+GRANT CONNECT, RESOURCE TO ggadmin;
+
+-- Grant specific system privileges needed for GoldenGate
+GRANT CREATE SESSION TO ggadmin;
+GRANT SELECT ANY TRANSACTION TO ggadmin;
+GRANT SELECT ANY TABLE TO ggadmin;
+GRANT FLASHBACK ANY TABLE TO ggadmin;
+GRANT ALTER ANY TABLE TO ggadmin;
+GRANT INSERT ANY TABLE TO ggadmin;
+GRANT UPDATE ANY TABLE TO ggadmin;
+GRANT DELETE ANY TABLE TO ggadmin;
+GRANT EXECUTE ANY PROCEDURE TO ggadmin;
+GRANT LOGMINING TO ggadmin; -- if using log mining
