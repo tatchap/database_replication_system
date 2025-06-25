@@ -1,4 +1,0 @@
-EXTRACT extract
-USERID ggate, PASSWORD yourpassword
-EXTTRAIL ./dirdat/ea
-TABLE schema_name.*;
